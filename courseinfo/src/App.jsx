@@ -1,12 +1,21 @@
-const Header = (props) =>{
-  console.log("Header is :" +props.course)
-  return(
+const Header = (props) => {
+  return (
     <>
-    <h1>{props.course}</h1>
+      <h1>{props.course}</h1>
     </>
   )
 }
 
+const Content = (props) => {
+  console.log("Content is :" + props.part + " " + props.excercise);
+  return (
+    <>
+      <p>
+        {props.part} {props.excercise}
+      </p>
+    </>
+  )
+}
 
 
 const App = () => {
@@ -20,16 +29,10 @@ const App = () => {
 
   return (
     <div>
-      <Header course = {course}/>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
+      <Header course={course} />
+      <Content part={part1} excercise={exercises1} />
+      <Content part={part2} excercise={exercises2} />
+      <Content part={part3} excercise={exercises3} />
       <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
     </div>
   )
