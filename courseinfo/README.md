@@ -1,6 +1,12 @@
-1.1–1.2: Course Information
-Practiced using components and props.
-Displayed course parts and total exercises.
-1.3–1.5: Course Information (Refactoring)
-Extracted components (Header, Content, Part).
-Improved code structure and readability.
+---
+
+### **1.12: Anecdotes – Step 1**
+- Displayed a random anecdote with a “Next anecdote” button.
+
+### **1.13: Anecdotes – Step 2**
+- Added voting functionality using an array in state.
+
+### **1.14: Anecdotes – Step 3**
+- Displayed the anecdote with the highest number of votes.
+
+---
